@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { Provider } from 'react-redux';
+import { store } from './store';
 
 // 1) Set up Redux
 
 export default function App() {
   return (
-    <Provider>
+    <Provider store={store}>
       <View style={styles.container}>
         <Text>Let's build UBER!</Text>
         <StatusBar style="auto" />
